@@ -1,0 +1,7 @@
+int y;
+int z = 0;
+int a, b, c;
+int p, q = 10, r, s = 5;
+
+x = 10;
+miVar == 123456;
