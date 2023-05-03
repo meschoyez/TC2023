@@ -1,0 +1,16 @@
+Tabla de símbolos
+
+Recolecta los identificadores, tipos de datos, funciones, clases, etc., para
+su uso en la compilación.
+
+Los identificadores se obtienen del analizador léxico.
+
+Los identificadores se buscan en la tabla cuando se los quiere usar.
+
+Entonces, debe tener dos funciones básicas:
+  - Agregar un símbolo
+  - Buscar un símbolo
+
+Posibles colecciones a usar: Vector, List, Map (Dictionary), Set 
+
+Conviene implementarla como una lista de mapas.

@@ -1,0 +1,29 @@
+@startuml TablaSimbolos
+
+class TablaSimbolos <<Singleton>> {
+    - List< Map<String, Id> > ts
+    + addSimbolo(Id)
+    + buscarSimbolo(String) : Id
+    + addContexto()
+    + delContexto()
+}
+
+
+abstract class Id <<abstract>> {
+    - String nombre
+    - Boolean inicializado
+    - Boolean usado
+    - String tipoDato
+}
+
+class Variable {}
+
+class Funcion {
+    - List<String> argumentos
+}
+
+TablaSimbolos -> Id
+Id <|-- Variable
+Id <|-- Funcion
+
+@enduml
